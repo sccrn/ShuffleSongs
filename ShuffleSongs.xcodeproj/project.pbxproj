@@ -10,6 +10,11 @@
 		160E289122B01F8200DCE8BC /* SplashController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E289022B01F8200DCE8BC /* SplashController.xib */; };
 		160E289322B01F8C00DCE8BC /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E289222B01F8C00DCE8BC /* SplashController.swift */; };
 		160E289522B0297000DCE8BC /* SSGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E289422B0297000DCE8BC /* SSGradient.swift */; };
+		160E289722B02FDC00DCE8BC /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E289622B02FDC00DCE8BC /* SplashViewModel.swift */; };
+		160E289C22B0317B00DCE8BC /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E289B22B0317B00DCE8BC /* HomeCoordinator.swift */; };
+		160E289F22B0333C00DCE8BC /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E289E22B0333C00DCE8BC /* HomeController.xib */; };
+		160E28A122B0334400DCE8BC /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E28A022B0334400DCE8BC /* HomeController.swift */; };
+		160E28A322B0334E00DCE8BC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E28A222B0334E00DCE8BC /* HomeViewModel.swift */; };
 		1678C70E22AF66C800236534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678C70D22AF66C800236534 /* AppDelegate.swift */; };
 		1678C71522AF66CE00236534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1678C71422AF66CE00236534 /* Assets.xcassets */; };
 		1678C71822AF66CE00236534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1678C71622AF66CE00236534 /* LaunchScreen.storyboard */; };
@@ -29,6 +34,11 @@
 		160E289022B01F8200DCE8BC /* SplashController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashController.xib; sourceTree = "<group>"; };
 		160E289222B01F8C00DCE8BC /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 		160E289422B0297000DCE8BC /* SSGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSGradient.swift; sourceTree = "<group>"; };
+		160E289622B02FDC00DCE8BC /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		160E289B22B0317B00DCE8BC /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		160E289E22B0333C00DCE8BC /* HomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
+		160E28A022B0334400DCE8BC /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		160E28A222B0334E00DCE8BC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		1678C70A22AF66C800236534 /* ShuffleSongs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShuffleSongs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1678C70D22AF66C800236534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1678C71422AF66CE00236534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +67,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160E289822B0316600DCE8BC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				160E289B22B0317B00DCE8BC /* HomeCoordinator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		160E289D22B0332E00DCE8BC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				160E289E22B0333C00DCE8BC /* HomeController.xib */,
+				160E28A022B0334400DCE8BC /* HomeController.swift */,
+				160E28A222B0334E00DCE8BC /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		1678C70122AF66C800236534 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +128,7 @@
 			children = (
 				1678C72F22AF67CF00236534 /* Coordinator.swift */,
 				1678C73122AF67D600236534 /* App */,
+				160E289822B0316600DCE8BC /* Home */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -161,8 +190,9 @@
 		1678C73922AF683100236534 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				1678C73F22B01F4900236534 /* Splash */,
+				160E289D22B0332E00DCE8BC /* Home */,
 				1678C73C22AF684100236534 /* App */,
+				1678C73F22B01F4900236534 /* Splash */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -197,6 +227,7 @@
 			children = (
 				160E289022B01F8200DCE8BC /* SplashController.xib */,
 				160E289222B01F8C00DCE8BC /* SplashController.swift */,
+				160E289622B02FDC00DCE8BC /* SplashViewModel.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -259,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160E289F22B0333C00DCE8BC /* HomeController.xib in Resources */,
 				1678C71822AF66CE00236534 /* LaunchScreen.storyboard in Resources */,
 				1678C71522AF66CE00236534 /* Assets.xcassets in Resources */,
 				160E289122B01F8200DCE8BC /* SplashController.xib in Resources */,
@@ -272,9 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160E28A322B0334E00DCE8BC /* HomeViewModel.swift in Sources */,
 				160E289522B0297000DCE8BC /* SSGradient.swift in Sources */,
 				1678C73022AF67CF00236534 /* Coordinator.swift in Sources */,
+				160E289C22B0317B00DCE8BC /* HomeCoordinator.swift in Sources */,
 				1678C72A22AF679900236534 /* Constants.swift in Sources */,
+				160E289722B02FDC00DCE8BC /* SplashViewModel.swift in Sources */,
 				1678C73522AF67F700236534 /* AppCoordinator.swift in Sources */,
 				1678C72C22AF67B100236534 /* SSNavigationController.swift in Sources */,
 				1678C73822AF681E00236534 /* APIManager.swift in Sources */,
@@ -282,6 +317,7 @@
 				1678C72822AF678900236534 /* UIImage.swift in Sources */,
 				1678C72622AF676F00236534 /* UIColor.swift in Sources */,
 				160E289322B01F8C00DCE8BC /* SplashController.swift in Sources */,
+				160E28A122B0334400DCE8BC /* HomeController.swift in Sources */,
 				1678C73322AF67EB00236534 /* RootCoordinator.swift in Sources */,
 				1678C73B22AF683E00236534 /* BaseController.swift in Sources */,
 				1678C70E22AF66C800236534 /* AppDelegate.swift in Sources */,
