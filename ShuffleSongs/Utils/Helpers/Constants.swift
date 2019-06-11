@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+///All of app's strings
+struct Constants {
+    static let screenTitle = "Shuffle Songs"
+}
