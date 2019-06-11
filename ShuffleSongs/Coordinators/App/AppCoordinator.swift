@@ -35,6 +35,7 @@ class AppCoordinator: RootCoordinator {
     
     
     public func start() {
-        
+        let splash = SplashController()
+        rootViewController.present(splash, animated: false, completion: nil)
     }
 }

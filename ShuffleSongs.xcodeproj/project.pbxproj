@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160E289122B01F8200DCE8BC /* SplashController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E289022B01F8200DCE8BC /* SplashController.xib */; };
+		160E289322B01F8C00DCE8BC /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E289222B01F8C00DCE8BC /* SplashController.swift */; };
+		160E289522B0297000DCE8BC /* SSGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E289422B0297000DCE8BC /* SSGradient.swift */; };
 		1678C70E22AF66C800236534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678C70D22AF66C800236534 /* AppDelegate.swift */; };
 		1678C71522AF66CE00236534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1678C71422AF66CE00236534 /* Assets.xcassets */; };
 		1678C71822AF66CE00236534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1678C71622AF66CE00236534 /* LaunchScreen.storyboard */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		160E289022B01F8200DCE8BC /* SplashController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashController.xib; sourceTree = "<group>"; };
+		160E289222B01F8C00DCE8BC /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
+		160E289422B0297000DCE8BC /* SSGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSGradient.swift; sourceTree = "<group>"; };
 		1678C70A22AF66C800236534 /* ShuffleSongs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShuffleSongs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1678C70D22AF66C800236534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1678C71422AF66CE00236534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +127,7 @@
 			children = (
 				1678C72B22AF67B100236534 /* SSNavigationController.swift */,
 				1678C72D22AF67BC00236534 /* SSNavigationBar.swift */,
+				160E289422B0297000DCE8BC /* SSGradient.swift */,
 			);
 			path = SSViews;
 			sourceTree = "<group>";
@@ -154,6 +161,7 @@
 		1678C73922AF683100236534 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				1678C73F22B01F4900236534 /* Splash */,
 				1678C73C22AF684100236534 /* App */,
 			);
 			path = Scenes;
@@ -182,6 +190,15 @@
 				1678C71422AF66CE00236534 /* Assets.xcassets */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		1678C73F22B01F4900236534 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				160E289022B01F8200DCE8BC /* SplashController.xib */,
+				160E289222B01F8C00DCE8BC /* SplashController.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +261,7 @@
 			files = (
 				1678C71822AF66CE00236534 /* LaunchScreen.storyboard in Resources */,
 				1678C71522AF66CE00236534 /* Assets.xcassets in Resources */,
+				160E289122B01F8200DCE8BC /* SplashController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160E289522B0297000DCE8BC /* SSGradient.swift in Sources */,
 				1678C73022AF67CF00236534 /* Coordinator.swift in Sources */,
 				1678C72A22AF679900236534 /* Constants.swift in Sources */,
 				1678C73522AF67F700236534 /* AppCoordinator.swift in Sources */,
@@ -262,6 +281,7 @@
 				1678C72E22AF67BC00236534 /* SSNavigationBar.swift in Sources */,
 				1678C72822AF678900236534 /* UIImage.swift in Sources */,
 				1678C72622AF676F00236534 /* UIColor.swift in Sources */,
+				160E289322B01F8C00DCE8BC /* SplashController.swift in Sources */,
 				1678C73322AF67EB00236534 /* RootCoordinator.swift in Sources */,
 				1678C73B22AF683E00236534 /* BaseController.swift in Sources */,
 				1678C70E22AF66C800236534 /* AppDelegate.swift in Sources */,
