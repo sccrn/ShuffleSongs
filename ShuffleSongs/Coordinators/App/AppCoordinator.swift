@@ -35,6 +35,22 @@ class AppCoordinator: RootCoordinator {
     
     
     public func start() {
-        
+        let splash = SplashController(viewModel: SplashViewModel(coordinatorDelegate: self))
+        rootViewController.present(splash, animated: false, completion: nil)
+    }
+    
+    private func setupHome() {
+        let home = HomeCoordinator()
+        home.start()
+        addChildCoordinator(childCoordinator: home)
+        rootViewController.present(home.rootViewController, animated: false, completion: nil)
+    }
+}
+
+extension AppCoordinator: SplashCoordinatorDelegate {
+    func didFinish(controller: SplashController) {
+        controller.dismiss(animated: false, completion: nil)
+        childCoordinators.forEach { self.removeChildCoordinator(childCoordinator: $0) }
+        setupHome()
     }
 }

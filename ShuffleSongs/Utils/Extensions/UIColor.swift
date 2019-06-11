@@ -11,7 +11,7 @@ import UIKit
 ///Extension that contains all the app's color.
 extension UIColor {
     ///#90515D
-    static let gradientSalmon = UIColor(red: 144/255, green: 81/255, blue: 93/255, alpha: 1)
+    static let gradientSalmon = UIColor(red: 170/255, green: 94/255, blue: 104/255, alpha: 1)
     
     ///#3F2D3B
     static let navigationController = UIColor(red: 63/255, green: 45/255, blue: 59/255, alpha: 1)
