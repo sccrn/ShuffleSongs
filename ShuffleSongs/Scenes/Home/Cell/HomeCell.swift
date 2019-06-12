@@ -14,10 +14,13 @@ class HomeCell: UITableViewCell {
     @IBOutlet weak var musicName: UILabel!
     @IBOutlet weak var bandName: UILabel!
     
+    ///We're passing our model to set up our cell.
     func configure(musicModel: MusicModel) {
         bandName.text = musicModel.bandName
         musicName.text = musicModel.musicName
-        bandImage.load(url: URL(string: musicModel.imageUrl))
+        bandImage.image = musicModel.image
+        bandImage.layer.cornerRadius = 16.0
+        bandImage.clipsToBounds = true
         self.addBottomBorder()
     }
 }

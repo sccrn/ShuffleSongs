@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class HomeCoordinator: RootCoordinator {
+    ///Our protocols.
     var childCoordinators: [Coordinator] = []
     var rootViewController: UIViewController { return self.navigationController }
     
@@ -18,6 +19,7 @@ class HomeCoordinator: RootCoordinator {
         return navigation
     }()
     
+    ///Our start's function to begin the flow.
     func start() {
         let home = HomeController()
         navigationController.pushViewController(home, animated: true)

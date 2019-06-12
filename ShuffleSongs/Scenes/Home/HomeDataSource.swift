@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+///This is our dataSource to set up our tableview and anothers methods that
+///depends of something of our tableviewDataSource/tableViewDelegate.
 class HomeDataSource: NSObject, UITableViewDataSource, UITableViewDelegate {
     private var viewModel: HomeViewModel
     

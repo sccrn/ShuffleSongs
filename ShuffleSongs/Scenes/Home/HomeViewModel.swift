@@ -20,10 +20,15 @@ protocol HomeDelegate: class {
 class HomeViewModel {
     weak var delegate: HomeDelegate?
     private var bandsID: [String] = BandID.allCases.map { $0.rawValue }
-    private var musics: [Music] = []
+    private var musics: [MusicModel] = []
     
+    ///We're calling our Manager to fetch the musics.
+    //First we're shuffled our bands's ID to get news bands.
+    //Then we're getting 3 elements of band's array and converting to string to our request.
+    //And finally, we're handling the response.
     func loadMusics() {
-        let ids = bandsID[randomPick: 3]
+        let bandsShuffled = bandsID.shuffled()
+        let ids = bandsShuffled.randomPick(number: 3).joined(separator: ",")
         MusicManager().fetchMusics(by: ids) { (result) in
             switch result {
             case .success(let movieResponse):
@@ -35,15 +40,26 @@ class HomeViewModel {
         }
     }
     
-    private func filterMusics(result: [Music]) -> [Music] {
-        return result.filter { $0.artworkUrl != nil }
+    ///We're removing the element that contains only the band's info and we don't this.
+    private func filterMusics(result: [Music]) -> [MusicModel] {
+        return shuffleBands(result: result.filter { $0.artworkUrl != nil })
     }
+    
+    ///We're converting the Music to our MusicModel to send to our tableview.
+    private func shuffleBands(result: [Music]) -> [MusicModel] {
+        var array: [MusicModel] = []
+        result.forEach {
+            array.append(MusicModel(music: $0))
+        }
+        return array
+    }
+
 }
 
 extension HomeViewModel {
     func numberOfRows() -> Int { return musics.count }
     
     func typeOfMusic(for row: Int) -> MusicModel {
-        return MusicModel(music: musics[row])
+        return musics[row]
     }
 }

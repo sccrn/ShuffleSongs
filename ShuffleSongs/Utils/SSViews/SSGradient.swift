@@ -8,9 +8,12 @@
 
 import UIKit
 
+///This class will do the view's gradient in Splash's screen,
+///we're using IBDesignable to set up in the XIB.
+///For this class, we're putting clear colors to be generic.
 @IBDesignable
 class SSGradient: UIView {
-    
+
     @IBInspectable var firstColor: UIColor = UIColor.clear {
         didSet { setupGradient() }
     }
@@ -23,6 +26,7 @@ class SSGradient: UIView {
         get { return CAGradientLayer.self }
     }
     
+    ///Creation of our layer and it's gonna present.
     func setupGradient() {
         let layer = self.layer as! CAGradientLayer
         layer.colors = [firstColor, secondColor].map { $0.cgColor }

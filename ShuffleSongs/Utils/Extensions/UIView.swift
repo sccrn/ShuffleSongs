@@ -10,41 +10,6 @@ import Foundation
 import UIKit
 
 extension UIView {
-    @IBInspectable public var cornerRadius: CGFloat {
-        get { return layer.cornerRadius }
-        set { layer.cornerRadius = newValue }
-    }
-    
-    public func roundCorner(with radius: CGFloat, to corners: UIRectCorner = .allCorners) {
-        if corners == .allCorners {
-            layer.cornerRadius = radius
-            return
-        }
-        
-        if #available(iOS 11.0, *) {
-            layer.cornerRadius = radius
-            var cornerMasks: CACornerMask = []
-            if corners.contains(.topLeft) { cornerMasks.insert(.layerMinXMinYCorner) }
-            if corners.contains(.topRight) { cornerMasks.insert(.layerMaxXMinYCorner) }
-            if corners.contains(.bottomLeft) { cornerMasks.insert(.layerMinXMaxYCorner) }
-            if corners.contains(.bottomRight) { cornerMasks.insert(.layerMaxXMaxYCorner) }
-            
-            layer.maskedCorners = cornerMasks
-            
-        } else {
-            let rectShape = CAShapeLayer()
-            rectShape.bounds = frame
-            rectShape.position = center
-            rectShape.path = UIBezierPath(roundedRect: bounds,
-                                          byRoundingCorners: corners,
-                                          cornerRadii: CGSize(width: radius, height: radius))
-                .cgPath
-            
-            // masking the view layer with rectShape layer
-            layer.mask = rectShape
-        }
-    }
-
     func addBottomBorder() {
         let border = UIView()
         border.tag = 1

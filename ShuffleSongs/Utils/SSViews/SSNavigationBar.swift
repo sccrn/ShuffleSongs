@@ -19,6 +19,7 @@ class SSNavigationBar: UINavigationBar {
         fatalError("init(coder:) has not been implemented")
     }
     
+    ///navigation bar's configuration.
     private func setupAppNavigationBar() {
         barTintColor = .navigationController
         tintColor = .white

@@ -8,11 +8,16 @@
 
 import Foundation
 
+///Our type of Response, we're just using the results that's why we don't need
+///implement the resultCount
 struct Response: Codable {
     let results: [Music]
 }
 
+///Same thing in here, the only things that we're using for our project are these
+///values for our response.
 struct Music: Codable {
+    let id: Int
     let artworkUrl: String?
     let trackName: String?
     let artistId: Int?

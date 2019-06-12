@@ -46,7 +46,10 @@ class HomeController: BaseController {
     }
     
     private func showAlert(message: String) {
+        let alert = UIAlertController(title: Constants.ops, message: message, preferredStyle: .alert)
         
+        alert.addAction(UIAlertAction(title: Constants.ok, style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
