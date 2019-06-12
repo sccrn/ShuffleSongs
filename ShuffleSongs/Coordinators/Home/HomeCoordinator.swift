@@ -19,6 +19,7 @@ class HomeCoordinator: RootCoordinator {
     }()
     
     func start() {
-        
+        let home = HomeController()
+        navigationController.pushViewController(home, animated: true)
     }
 }

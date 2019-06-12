@@ -25,6 +25,9 @@ extension UIColor {
     ///#FDF8F9
     static let grayColor = UIColor(red: 253/255, green: 248/255, blue: 249/255, alpha: 1)
     
+    ///#463D47
+    static let separator = UIColor(red: 70/255, green: 61/255, blue: 71/255, alpha: 1)
+    
 }
 
 

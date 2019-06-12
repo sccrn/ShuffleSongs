@@ -1,5 +1,5 @@
 //
-//  UIImage.swift
+//  SSError.swift
 //  ShuffleSongs
 //
 //  Created by Guarana on 2019-06-11.
@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+enum SSError: Error {
+    case apiError
+    case invalidResponse
+    case noData
+    case decodeError
+    case unknown
+}

@@ -21,6 +21,7 @@ class SSNavigationBar: UINavigationBar {
     
     private func setupAppNavigationBar() {
         barTintColor = .navigationController
+        tintColor = .white
         titleTextAttributes = [.foregroundColor: UIColor.white]
     }
 }
