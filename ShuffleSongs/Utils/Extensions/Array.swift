@@ -2,7 +2,7 @@
 //  Array.swift
 //  ShuffleSongs
 //
-//  Created by Guarana on 2019-06-12.
+//  Created by Samanta Coutinho on 2019-06-12.
 //  Copyright © 2019 shuffleSongs. All rights reserved.
 //
 

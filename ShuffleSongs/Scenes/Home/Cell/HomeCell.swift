@@ -2,7 +2,7 @@
 //  HomeCell.swift
 //  ShuffleSongs
 //
-//  Created by Guarana on 2019-06-11.
+//  Created by Samanta Coutinho on 2019-06-11.
 //  Copyright © 2019 shuffleSongs. All rights reserved.
 //
 
@@ -16,7 +16,7 @@ class HomeCell: UITableViewCell {
     
     ///We're passing our model to set up our cell.
     func configure(musicModel: MusicModel) {
-        bandName.text = musicModel.bandName
+        bandName.text = musicModel.bandName 
         musicName.text = musicModel.musicName
         bandImage.image = musicModel.image
         bandImage.layer.cornerRadius = 16.0

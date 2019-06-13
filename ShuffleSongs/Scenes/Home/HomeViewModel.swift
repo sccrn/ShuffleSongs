@@ -2,7 +2,7 @@
 //  HomeViewModel.swift
 //  ShuffleSongs
 //
-//  Created by Guarana on 2019-06-11.
+//  Created by Samanta Coutinho on 2019-06-11.
 //  Copyright © 2019 shuffleSongs. All rights reserved.
 //
 
@@ -45,15 +45,35 @@ class HomeViewModel {
         return shuffleBands(result: result.filter { $0.artworkUrl != nil })
     }
     
-    ///We're converting the Music to our MusicModel to send to our tableview.
+    //In this function, first we're converting our result, Music, to our model, MusicModel,
+    //to send to our tableview.
+    //Then, we're creating a new array with the order that we need. First we're checking
+    //if this new array is empty/the last element is from another band, if it's not we're
+    //checking the first element, in this case we're increasement our position.
     private func shuffleBands(result: [Music]) -> [MusicModel] {
-        var array: [MusicModel] = []
+        var musicsModel: [MusicModel] = []
         result.forEach {
-            array.append(MusicModel(music: $0))
+            musicsModel.append(MusicModel(music: $0))
         }
-        return array
+        var sortedArray: [MusicModel] = []
+        var position: Int = 1
+        
+        while(!musicsModel.isEmpty ) {
+            for (index, element) in musicsModel.enumerated() {
+                if sortedArray.isEmpty || sortedArray.last?.bandName != element.bandName {
+                    sortedArray.append(element)
+                    musicsModel.remove(at: index)
+                    break
+                } else if sortedArray.first?.bandName != element.bandName {
+                    sortedArray.insert(element, at: position)
+                    musicsModel.remove(at: index)
+                    position += 2
+                    break
+                }
+            }
+        }
+        return sortedArray
     }
-
 }
 
 extension HomeViewModel {
