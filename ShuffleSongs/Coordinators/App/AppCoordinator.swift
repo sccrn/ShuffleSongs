@@ -2,7 +2,7 @@
 //  AppCoordinator.swift
 //  ShuffleSongs
 //
-//  Created by Guarana on 2019-06-11.
+//  Created by Samanta Coutinho on 2019-06-11.
 //  Copyright © 2019 shuffleSongs. All rights reserved.
 //
 
@@ -33,12 +33,14 @@ class AppCoordinator: RootCoordinator {
         self.window.makeKeyAndVisible()
     }
     
-    
+    ///Our first screen and our rootViewController in the beginning.
     public func start() {
         let splash = SplashController(viewModel: SplashViewModel(coordinatorDelegate: self))
         rootViewController.present(splash, animated: false, completion: nil)
     }
     
+    ///For Home's screen be another flow, so we're calling your own coordinator
+    ///and setting this one our rootViewController.
     private func setupHome() {
         let home = HomeCoordinator()
         home.start()
@@ -48,6 +50,8 @@ class AppCoordinator: RootCoordinator {
 }
 
 extension AppCoordinator: SplashCoordinatorDelegate {
+    ///We're setting again our rootViewController, so we need remove all childCoordinators
+    ///and dismiss our current controller.
     func didFinish(controller: SplashController) {
         controller.dismiss(animated: false, completion: nil)
         childCoordinators.forEach { self.removeChildCoordinator(childCoordinator: $0) }

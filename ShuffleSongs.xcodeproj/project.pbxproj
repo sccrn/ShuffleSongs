@@ -15,11 +15,22 @@
 		160E289F22B0333C00DCE8BC /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E289E22B0333C00DCE8BC /* HomeController.xib */; };
 		160E28A122B0334400DCE8BC /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E28A022B0334400DCE8BC /* HomeController.swift */; };
 		160E28A322B0334E00DCE8BC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E28A222B0334E00DCE8BC /* HomeViewModel.swift */; };
+		160E28A622B050F800DCE8BC /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E28A522B050F800DCE8BC /* HomeCell.swift */; };
+		160E28A822B0510000DCE8BC /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 160E28A722B0510000DCE8BC /* HomeCell.xib */; };
+		160E28AA22B0524C00DCE8BC /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E28A922B0524C00DCE8BC /* UITableView.swift */; };
+		160E28AC22B0525700DCE8BC /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E28AB22B0525700DCE8BC /* UITableViewCell.swift */; };
+		160E28AE22B0532300DCE8BC /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E28AD22B0532300DCE8BC /* MusicModel.swift */; };
+		160E28B022B053CA00DCE8BC /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E28AF22B053CA00DCE8BC /* Music.swift */; };
+		160E28B222B069B600DCE8BC /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E28B122B069B600DCE8BC /* HomeDataSource.swift */; };
+		160E28B422B06D5F00DCE8BC /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E28B322B06D5F00DCE8BC /* MusicManager.swift */; };
+		160E28B622B06E9200DCE8BC /* SSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E28B522B06E9200DCE8BC /* SSError.swift */; };
+		160E28B822B0AA7D00DCE8BC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E28B722B0AA7D00DCE8BC /* UIView.swift */; };
+		160E28BC22B17B1000DCE8BC /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E28BB22B17B1000DCE8BC /* Array.swift */; };
+		166FF42422B1E7B20005BE9C /* MusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166FF42322B1E7B20005BE9C /* MusicTests.swift */; };
 		1678C70E22AF66C800236534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678C70D22AF66C800236534 /* AppDelegate.swift */; };
 		1678C71522AF66CE00236534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1678C71422AF66CE00236534 /* Assets.xcassets */; };
 		1678C71822AF66CE00236534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1678C71622AF66CE00236534 /* LaunchScreen.storyboard */; };
 		1678C72622AF676F00236534 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678C72522AF676F00236534 /* UIColor.swift */; };
-		1678C72822AF678900236534 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678C72722AF678900236534 /* UIImage.swift */; };
 		1678C72A22AF679900236534 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678C72922AF679900236534 /* Constants.swift */; };
 		1678C72C22AF67B100236534 /* SSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678C72B22AF67B100236534 /* SSNavigationController.swift */; };
 		1678C72E22AF67BC00236534 /* SSNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678C72D22AF67BC00236534 /* SSNavigationBar.swift */; };
@@ -30,6 +41,16 @@
 		1678C73B22AF683E00236534 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1678C73A22AF683E00236534 /* BaseController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		166FF41C22B19E3C0005BE9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1678C70222AF66C800236534 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1678C70922AF66C800236534;
+			remoteInfo = ShuffleSongs;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		160E289022B01F8200DCE8BC /* SplashController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashController.xib; sourceTree = "<group>"; };
 		160E289222B01F8C00DCE8BC /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
@@ -39,13 +60,26 @@
 		160E289E22B0333C00DCE8BC /* HomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
 		160E28A022B0334400DCE8BC /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		160E28A222B0334E00DCE8BC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		160E28A522B050F800DCE8BC /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		160E28A722B0510000DCE8BC /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		160E28A922B0524C00DCE8BC /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		160E28AB22B0525700DCE8BC /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		160E28AD22B0532300DCE8BC /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
+		160E28AF22B053CA00DCE8BC /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		160E28B122B069B600DCE8BC /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
+		160E28B322B06D5F00DCE8BC /* MusicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
+		160E28B522B06E9200DCE8BC /* SSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSError.swift; sourceTree = "<group>"; };
+		160E28B722B0AA7D00DCE8BC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		160E28BB22B17B1000DCE8BC /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		166FF41722B19E3C0005BE9C /* ShuffleSongsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShuffleSongsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		166FF41B22B19E3C0005BE9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		166FF42322B1E7B20005BE9C /* MusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTests.swift; sourceTree = "<group>"; };
 		1678C70A22AF66C800236534 /* ShuffleSongs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShuffleSongs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1678C70D22AF66C800236534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1678C71422AF66CE00236534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1678C71722AF66CE00236534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1678C71922AF66CE00236534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1678C72522AF676F00236534 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		1678C72722AF678900236534 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		1678C72922AF679900236534 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1678C72B22AF67B100236534 /* SSNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNavigationController.swift; sourceTree = "<group>"; };
 		1678C72D22AF67BC00236534 /* SSNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNavigationBar.swift; sourceTree = "<group>"; };
@@ -57,6 +91,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		166FF41422B19E3C0005BE9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1678C70722AF66C800236534 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,17 +119,46 @@
 		160E289D22B0332E00DCE8BC /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				160E28A422B050E700DCE8BC /* Cell */,
 				160E289E22B0333C00DCE8BC /* HomeController.xib */,
 				160E28A022B0334400DCE8BC /* HomeController.swift */,
+				160E28B122B069B600DCE8BC /* HomeDataSource.swift */,
 				160E28A222B0334E00DCE8BC /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		160E28A422B050E700DCE8BC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				160E28A722B0510000DCE8BC /* HomeCell.xib */,
+				160E28A522B050F800DCE8BC /* HomeCell.swift */,
+				160E28AD22B0532300DCE8BC /* MusicModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		160E28BD22B17BE700DCE8BC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		166FF41822B19E3C0005BE9C /* ShuffleSongsTests */ = {
+			isa = PBXGroup;
+			children = (
+				166FF41B22B19E3C0005BE9C /* Info.plist */,
+				166FF42322B1E7B20005BE9C /* MusicTests.swift */,
+			);
+			path = ShuffleSongsTests;
 			sourceTree = "<group>";
 		};
 		1678C70122AF66C800236534 = {
 			isa = PBXGroup;
 			children = (
 				1678C70C22AF66C800236534 /* ShuffleSongs */,
+				166FF41822B19E3C0005BE9C /* ShuffleSongsTests */,
 				1678C70B22AF66C800236534 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				1678C70A22AF66C800236534 /* ShuffleSongs.app */,
+				166FF41722B19E3C0005BE9C /* ShuffleSongsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				1678C72922AF679900236534 /* Constants.swift */,
+				160E28B522B06E9200DCE8BC /* SSError.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -164,8 +236,12 @@
 		1678C72422AF674500236534 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				160E28BD22B17BE700DCE8BC /* New Group */,
 				1678C72522AF676F00236534 /* UIColor.swift */,
-				1678C72722AF678900236534 /* UIImage.swift */,
+				160E28A922B0524C00DCE8BC /* UITableView.swift */,
+				160E28AB22B0525700DCE8BC /* UITableViewCell.swift */,
+				160E28B722B0AA7D00DCE8BC /* UIView.swift */,
+				160E28BB22B17B1000DCE8BC /* Array.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -183,6 +259,8 @@
 			isa = PBXGroup;
 			children = (
 				1678C73722AF681E00236534 /* APIManager.swift */,
+				160E28AF22B053CA00DCE8BC /* Music.swift */,
+				160E28B322B06D5F00DCE8BC /* MusicManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -190,9 +268,9 @@
 		1678C73922AF683100236534 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				160E289D22B0332E00DCE8BC /* Home */,
 				1678C73C22AF684100236534 /* App */,
 				1678C73F22B01F4900236534 /* Splash */,
+				160E289D22B0332E00DCE8BC /* Home */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -235,6 +313,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		166FF41622B19E3C0005BE9C /* ShuffleSongsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 166FF42022B19E3C0005BE9C /* Build configuration list for PBXNativeTarget "ShuffleSongsTests" */;
+			buildPhases = (
+				166FF41322B19E3C0005BE9C /* Sources */,
+				166FF41422B19E3C0005BE9C /* Frameworks */,
+				166FF41522B19E3C0005BE9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				166FF41D22B19E3C0005BE9C /* PBXTargetDependency */,
+			);
+			name = ShuffleSongsTests;
+			productName = ShuffleSongsTests;
+			productReference = 166FF41722B19E3C0005BE9C /* ShuffleSongsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1678C70922AF66C800236534 /* ShuffleSongs */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1678C71C22AF66CE00236534 /* Build configuration list for PBXNativeTarget "ShuffleSongs" */;
@@ -262,6 +358,10 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = shuffleSongs;
 				TargetAttributes = {
+					166FF41622B19E3C0005BE9C = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 1678C70922AF66C800236534;
+					};
 					1678C70922AF66C800236534 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -281,11 +381,19 @@
 			projectRoot = "";
 			targets = (
 				1678C70922AF66C800236534 /* ShuffleSongs */,
+				166FF41622B19E3C0005BE9C /* ShuffleSongsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		166FF41522B19E3C0005BE9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1678C70822AF66C800236534 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,37 +402,63 @@
 				1678C71822AF66CE00236534 /* LaunchScreen.storyboard in Resources */,
 				1678C71522AF66CE00236534 /* Assets.xcassets in Resources */,
 				160E289122B01F8200DCE8BC /* SplashController.xib in Resources */,
+				160E28A822B0510000DCE8BC /* HomeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		166FF41322B19E3C0005BE9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166FF42422B1E7B20005BE9C /* MusicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1678C70622AF66C800236534 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160E28B822B0AA7D00DCE8BC /* UIView.swift in Sources */,
 				160E28A322B0334E00DCE8BC /* HomeViewModel.swift in Sources */,
 				160E289522B0297000DCE8BC /* SSGradient.swift in Sources */,
 				1678C73022AF67CF00236534 /* Coordinator.swift in Sources */,
 				160E289C22B0317B00DCE8BC /* HomeCoordinator.swift in Sources */,
 				1678C72A22AF679900236534 /* Constants.swift in Sources */,
+				160E28AC22B0525700DCE8BC /* UITableViewCell.swift in Sources */,
 				160E289722B02FDC00DCE8BC /* SplashViewModel.swift in Sources */,
+				160E28B622B06E9200DCE8BC /* SSError.swift in Sources */,
+				160E28BC22B17B1000DCE8BC /* Array.swift in Sources */,
+				160E28B022B053CA00DCE8BC /* Music.swift in Sources */,
 				1678C73522AF67F700236534 /* AppCoordinator.swift in Sources */,
+				160E28AE22B0532300DCE8BC /* MusicModel.swift in Sources */,
+				160E28B222B069B600DCE8BC /* HomeDataSource.swift in Sources */,
 				1678C72C22AF67B100236534 /* SSNavigationController.swift in Sources */,
 				1678C73822AF681E00236534 /* APIManager.swift in Sources */,
 				1678C72E22AF67BC00236534 /* SSNavigationBar.swift in Sources */,
-				1678C72822AF678900236534 /* UIImage.swift in Sources */,
+				160E28AA22B0524C00DCE8BC /* UITableView.swift in Sources */,
 				1678C72622AF676F00236534 /* UIColor.swift in Sources */,
+				160E28B422B06D5F00DCE8BC /* MusicManager.swift in Sources */,
 				160E289322B01F8C00DCE8BC /* SplashController.swift in Sources */,
 				160E28A122B0334400DCE8BC /* HomeController.swift in Sources */,
 				1678C73322AF67EB00236534 /* RootCoordinator.swift in Sources */,
 				1678C73B22AF683E00236534 /* BaseController.swift in Sources */,
+				160E28A622B050F800DCE8BC /* HomeCell.swift in Sources */,
 				1678C70E22AF66C800236534 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		166FF41D22B19E3C0005BE9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1678C70922AF66C800236534 /* ShuffleSongs */;
+			targetProxy = 166FF41C22B19E3C0005BE9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1678C71622AF66CE00236534 /* LaunchScreen.storyboard */ = {
@@ -338,6 +472,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		166FF41E22B19E3C0005BE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LD8PRQDW9;
+				INFOPLIST_FILE = ShuffleSongsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuffleSongs.ShuffleSongsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShuffleSongs.app/ShuffleSongs";
+			};
+			name = Debug;
+		};
+		166FF41F22B19E3C0005BE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LD8PRQDW9;
+				INFOPLIST_FILE = ShuffleSongsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuffleSongs.ShuffleSongsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShuffleSongs.app/ShuffleSongs";
+			};
+			name = Release;
+		};
 		1678C71A22AF66CE00236534 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -493,6 +667,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		166FF42022B19E3C0005BE9C /* Build configuration list for PBXNativeTarget "ShuffleSongsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166FF41E22B19E3C0005BE9C /* Debug */,
+				166FF41F22B19E3C0005BE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1678C70522AF66C800236534 /* Build configuration list for PBXProject "ShuffleSongs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

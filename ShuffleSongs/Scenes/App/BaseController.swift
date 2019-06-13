@@ -2,7 +2,7 @@
 //  BaseController.swift
 //  ShuffleSongs
 //
-//  Created by Guarana on 2019-06-11.
+//  Created by Samanta Coutinho on 2019-06-11.
 //  Copyright © 2019 shuffleSongs. All rights reserved.
 //
 
@@ -14,10 +14,10 @@ class BaseController: UIViewController {
     public init() { super.init(nibName: nil, bundle: nil) }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError()
+        return nil
     }
     
     override public var preferredStatusBarStyle: UIStatusBarStyle {
-        return .default
+        return .lightContent
     }
 }

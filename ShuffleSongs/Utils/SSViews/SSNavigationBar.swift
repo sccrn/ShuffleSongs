@@ -2,7 +2,7 @@
 //  SSNavigationBar.swift
 //  ShuffleSongs
 //
-//  Created by Guarana on 2019-06-11.
+//  Created by Samanta Coutinho on 2019-06-11.
 //  Copyright © 2019 shuffleSongs. All rights reserved.
 //
 
@@ -19,8 +19,10 @@ class SSNavigationBar: UINavigationBar {
         fatalError("init(coder:) has not been implemented")
     }
     
+    ///navigation bar's configuration.
     private func setupAppNavigationBar() {
         barTintColor = .navigationController
+        tintColor = .white
         titleTextAttributes = [.foregroundColor: UIColor.white]
     }
 }
