@@ -40,4 +40,16 @@ class MusicTests: XCTestCase {
         XCTAssertNotNil(homeViewModel.loadMusics())
         XCTAssertEqual(homeViewModel.numberOfRows(), 0)
     }
+    
+    func testInit() {
+        let homeView = HomeController(coder: NSCoder())
+        XCTAssertNil(homeView)
+    }
+    
+    func testError() {
+        XCTAssertEqual(SSError.unknown.localizedDescription, Constants.unknown)
+        XCTAssertEqual(SSError.apiError.localizedDescription, Constants.apiError)
+        XCTAssertEqual(SSError.noData.localizedDescription, Constants.noData)
+        XCTAssertEqual(SSError.invalidResponse.localizedDescription, Constants.invalidResponse)
+    }
 }
